@@ -23,6 +23,7 @@ int main()
             scanf("%d", &num1);
             printf("Ingrese segundo numero: ");
             scanf("%d", &num2);
+
             break;
 
         case 2:
@@ -30,6 +31,8 @@ int main()
             scanf("%d", &num1);
             printf("Ingrese segundo numero: ");
             scanf("%d", &num2);
+            resultado = restar(num1,num2);
+            printf("Resultado: %d - %d = %d\n", num1, num2, resultado);
             break;
 
         case 3:
@@ -37,8 +40,8 @@ int main()
             scanf("%d", &num1);
             printf("Ingrese segundo numero: ");
             scanf("%d", &num2);
-            resultado = multiplicar(num1,num2);
-            printf("Resultado: %d * %d = %d\n", num1,num2,resultado);
+            resultado = multiplicar(num1, num2);
+            printf("Resultado: %d * %d = %d\n", num1, num2, resultado);
             break;
 
         case 4:
@@ -84,10 +87,16 @@ void mostrar_menu()
 
 // Crear las demás funciones aquí
 
-//Función Multiplicar
+//Operador Restar
+int restar (int a, int b){
+
+    int resta = a - b;
+    return resta;
+}
+
+//Operador Multiplicar
 int multiplicar (int a, int b){
 
     return a * b; 
-
 }
 
