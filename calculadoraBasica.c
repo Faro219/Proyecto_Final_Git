@@ -23,6 +23,8 @@ int main()
             scanf("%d", &num1);
             printf("Ingrese segundo numero: ");
             scanf("%d", &num2);
+            resultado = sumar(num1,num2);
+            printf("Resultado: %d + %d = %d\n", num1, num2, resultado);
             break;
 
         case 2:
@@ -81,6 +83,9 @@ void mostrar_menu()
 }
 
 // Crear las demás funciones aquí
-
+int sumar(int a, int b){ 
+    int suma = a + b;
+    return suma;
+}
 
 
